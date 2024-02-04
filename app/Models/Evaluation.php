@@ -9,14 +9,14 @@ class Evaluation extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'evaluation_id',
+        'user_id',
         'note',
         'commentaire',
         
 
     ];  
    
-    public function evaluation(){
+    public function user(){
         return $this->belongsTo(Evaluation::class);
     }
     

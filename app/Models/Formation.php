@@ -16,10 +16,13 @@ class Formation extends Model
 
     ];
     public function user(){
-        return $this->belongsTo(user::class);
+        return $this->belongsTo(Formation::class);
     }
     public function salle(){
         return $this->hasMany(salle::class);
+    }
+    public function apprenant(){
+        return $this->hasMany(apprenant::class);
     }
 }
 

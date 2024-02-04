@@ -21,6 +21,9 @@ class Salle extends Model
     public function user(){
         return $this->belongsTo(Salle::class);
     }
+    public function formation(){
+        return $this->hasMany(formation::class);
+    }
     
 }
 
