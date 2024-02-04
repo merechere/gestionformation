@@ -21,8 +21,14 @@ class Sessions extends Model
     public function user(){
         return $this->belongsTo(Ressource::class);
     }
-    public function evaluation(){
-        return $this->hasMany(Evaluation::class);
-    }
     
+    public function formation(){
+        return $this->hasMany(formation::class);
+    }
+    public function secretaire(){
+        return $this->hasMany(secretaire::class);
+    }
+    public function ressource(){
+        return $this->ManytoMany(ressource::class);
+    }
 }

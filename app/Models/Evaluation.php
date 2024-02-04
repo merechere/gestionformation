@@ -19,5 +19,8 @@ class Evaluation extends Model
     public function user(){
         return $this->belongsTo(Evaluation::class);
     }
+    public function session(){
+        return $this->hasMany(Sessions::class);
+    }
     
 }

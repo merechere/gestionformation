@@ -10,7 +10,8 @@ class Rapport extends Model
     use HasFactory;
     
     protected $fillable = [
-        'dateInscription',
+        'contenu',
+        'dateCreation',
         'user_id',
     ];
 

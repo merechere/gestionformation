@@ -22,4 +22,5 @@ class Formateur extends Model
         return $this->belongsTo(Formateur::class);
     }
     
+    
 }

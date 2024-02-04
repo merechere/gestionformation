@@ -22,7 +22,7 @@ class Salle extends Model
         return $this->belongsTo(Salle::class);
     }
     public function formation(){
-        return $this->hasMany(formation::class);
+        return $this->ManyToMany(formation::class);
     }
     
 }

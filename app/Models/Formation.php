@@ -19,10 +19,10 @@ class Formation extends Model
         return $this->belongsTo(Formation::class);
     }
     public function salle(){
-        return $this->hasMany(salle::class);
+        return $this->ManytoMany(salle::class);
     }
     public function apprenant(){
-        return $this->hasMany(apprenant::class);
+        return $this->ManytoMany(apprenant::class);
     }
 }
 

@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Ressource extends Model
 {
     use HasFactory;
+
     
     protected $fillable = [
         'libelle',
@@ -18,6 +19,9 @@ class Ressource extends Model
 
     public function user(){
         return $this->belongsTo(Ressource::class);
+    }
+    public function session(){
+        return $this->ManytoMany(Sessions::class);
     }
     
 }

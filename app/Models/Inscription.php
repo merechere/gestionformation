@@ -16,7 +16,5 @@ class Inscription extends Model
     public function user(){
         return $this->belongsTo(Inscription::class);
     }
-    public function Apprenant(){
-        return $this->hasMany(Apprenant::class);
-    }
+    
 }

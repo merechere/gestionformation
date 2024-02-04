@@ -26,6 +26,9 @@ class Apprenant extends Model
     public function inscription(){
         return $this->hasMany(inscription::class);
     }
+    public function formation(){
+        return $this->ManytoMany(formation::class);
+    }
 }
 
 
